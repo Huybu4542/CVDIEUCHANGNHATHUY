@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Điểu Chang Nhật Huy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div id="background">
+        <canvas id="stars"></canvas>
+    </div>
+    <div class="container">
+        <!-- Nội dung CV -->
+        <header>
+            <div class="profile">
+                <img src="profile.jpg" alt="Ảnh đại diện">
+                <h1>Điểu Chang Nhật Huy</h1>
+                <p><i class="fas fa-map-marker-alt"></i> 60/Thạnh Lộc 16, Khu phố 3C</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:huychallu@gamil.con">huychallu@gamil.con</a></p>
+                <p><i class="fas fa-phone"></i> 0376530089</p>
+            </div>
+        </header>
+
+        <main>
+            <!-- Mục tiêu nghề nghiệp -->
+            <section class="card">
+                <h2><i class="fas fa-bullseye"></i> Mục tiêu nghề nghiệp</h2>
+                <p>Tìm kiếm công việc bán thời gian tại KFC để học hỏi kinh nghiệm trong môi trường chuyên nghiệp và phát triển kỹ năng giao tiếp, xử lý tình huống.</p>
+            </section>
+
+            <!-- Học vấn -->
+            <section class="card">
+                <h2><i class="fas fa-graduation-cap"></i> Học vấn</h2>
+                <ul>
+                    <li><strong>Trường:</strong> Trường Cao đẳng Công nghệ</li>
+                    <li><strong>Ngành học:</strong> Tin học ứng dụng</li>
+                    <li><strong>Thời gian:</strong> 2021 - 2024</li>
+                </ul>
+            </section>
+
+            <!-- Kinh nghiệm làm việc -->
+            <section class="card">
+                <h2><i class="fas fa-briefcase"></i> Kinh nghiệm làm việc</h2>
+                <ul>
+                    <li><strong>Phục vụ tại quán ăn gia đình (2018 - 2023):</strong>
+                        <ul>
+                            <li>Chào đón khách hàng, tư vấn món ăn và xử lý đơn hàng.</li>
+                            <li>Dọn dẹp, sắp xếp khu vực ăn uống sạch sẽ, gọn gàng.</li>
+                            <li>Đảm bảo sự hài lòng của khách hàng thông qua dịch vụ nhanh chóng và thân thiện.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Kỹ năng -->
+            <section class="card">
+                <h2><i class="fas fa-tools"></i> Kỹ năng</h2>
+                <ul>
+                    <li>Giao tiếp thân thiện và chuyên nghiệp.</li>
+                    <li>Xử lý tình huống nhanh chóng, hiệu quả.</li>
+                    <li>Quản lý thời gian tốt, làm việc nhóm hiệu quả.</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="buttons">
+                <button id="theme-toggle"><i class="fas fa-adjust"></i> Dark Mode</button>
+                <button onclick="downloadPDF()"><i class="fas fa-file-download"></i> Tải CV PDF</button>
+            </div>
+            <p>&copy; 2024 Điểu Chang Nhật Huy</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> 
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* Đặt font chung */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Đặt nền phía sau nội dung */
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #007BFF;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 28px;
+    color: #007BFF;
+}
+
+footer p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #007BFF;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+/* Nút chức năng */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(45deg, #007BFF, #00C6FF);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #0056b3, #007BFF);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+/* Chế độ Dark Mode */
+.dark-mode {
+    background: linear-gradient(135deg, #2c3e50, #4a69bd);
+    color: #f1f1f1;
+}
+
+.dark-mode .card {
+    background: #34495e;
+    color: #f1f1f1;
+}
+
+.dark-mode button {
+    background: linear-gradient(45deg, #ff6b6b, #ff9f43);
+}
+
+.dark-mode button:hover {
+    background: linear-gradient(45deg, #ff3f3f, #ff6b6b);
+}
